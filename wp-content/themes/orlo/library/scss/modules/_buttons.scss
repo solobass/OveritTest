@@ -1,0 +1,190 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Button Styles
+
+Buttons are a pretty important part of your site's style, so it's
+important to have a consistent baseline for them. Use this stylesheet
+to create all kinds of buttons.
+
+Helpful Links:
+http://galp.in/blog/2011/08/02/the-ui-guide-part-1-buttons/
+
+******************************************************************/
+
+
+body .orlo-button {
+    
+    width: 150px;
+    
+    /*
+    a {
+        border: 1px solid #c8c8c8;
+        text-align: center;
+        padding: 18px 20px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 13px;
+        font-weight: bold;
+        color: #a6a6a6;
+        line-height: 13px;
+        @extend .blocklink;  
+        
+        &:hover {
+            border-color: #9b9b9b;
+            background-color: #d5d5d5;
+            color: #787878;
+        }
+    }
+    */
+
+    a {
+        border: 1px solid #c8c8c8;
+        text-align: center;
+        padding: 18px 20px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 13px;
+        font-weight: bold;
+        color: #a6a6a6;
+        line-height: 13px;
+        @extend .blocklink;  
+        
+        &:hover {
+            border-color: #a6a6a6;
+            background-color: #a6a6a6;
+            color: white;
+        }
+    }    
+    
+}
+
+body .orlo-content-button {
+    @extend .orlo-button;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    a {
+        background-color: $orlo-teal;
+        color: white;
+        border: 0;
+        &:hover {
+            background-color: $orlo-darkteal;
+            color: white;
+        }
+    }
+}
+body .orlo-content-button.purple a {
+    background-color: $orlo-purple;
+    &:hover {
+        background-color: $orlo-darkpurple;
+    }
+}
+body .orlo-content-button.gray a {
+    background-color: #e6e6e6;
+    color: #87898f;
+    &:hover {
+        background-color: #e6e6e6;
+    }
+}
+
+
+body .see-more-container {
+    
+    clear: both;
+    
+    a {
+        
+        display: block;
+        text-align: center;
+        
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $sans-serif;
+        font-size: 30px;
+        line-height: 40px;
+        color: #aaaaaa;
+        
+        margin: 30px auto;
+        
+        .see-more-icon {
+            color: #d9d9d9;
+            margin-right: 15px;
+            font-size: 80px;
+            vertical-align: bottom;
+        }
+        
+        .see-more-label {
+        }
+        
+        &:hover {
+            color: #aaaaaa;
+        }
+        
+    }
+}
+
+
+
+/*********************
+BUTTON DEFAULTS
+We're gonna use a placeholder selector here
+so we can use common styles. We then use this
+to load up the defaults in all our buttons.
+
+Here's a quick video to show how it works:
+http://www.youtube.com/watch?v=hwdVpKiJzac
+
+*********************/
+
+%btn {
+  display: inline-block;
+  position: relative;
+  font-family: $sans-serif;
+  text-decoration: none;
+  color: $white;
+  font-size: 0.9em;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: normal;
+  padding: 0 24px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  @include transition(background-color 0.14s ease-in-out);
+
+  // hovering on the btn
+  &:hover, &:focus {
+    color: $white;
+    text-decoration: none;
+  } // end hover
+
+  // clicking on the button
+  &:active {
+    top: 1px; // adds a tiny hop to the click
+  } // end active
+
+} // end .button
+
+/*
+An example button.
+You can use this example if you want. Just replace all the variables
+and it will create a button dependant on those variables.
+*/
+.blue-btn {
+  @extend %btn; // here we load the btn defaults
+  background-color: $blue;
+
+  &:hover,
+  &:focus {
+    background-color: darken($blue, 4%);
+  } // end hover
+
+  &:active {
+    background-color: darken($blue, 5%);
+  } // end active
+
+} // end blue button

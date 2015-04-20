@@ -1,0 +1,235 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+
+
+body.home {
+    background-image: url(../images/bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .header {
+        background-color: transparent;
+    }
+    
+}
+
+
+.wrap {
+  width: 960px;
+}
+
+
+#logo {
+    text-align: left;
+}
+
+#inner-header {
+    position: relative;
+}
+#inner-header nav {
+    position: absolute;
+    top: 115px;
+    left: 50px;
+    ul {
+        display: block;
+    }
+}
+
+#apply-now {
+    position: absolute;
+    top: 102px;
+    right: 0px;
+    margin: 0;
+}
+
+
+#blog-posts {
+    width: 960px;
+}
+
+
+/***
+        HOME PAGE
+ ***/
+#home-container .wrap {
+    
+    height: 960px;
+    width: 960px;
+    margin-bottom: 90px;
+    position: relative;
+    
+    .home-block {
+        width: 320px;
+        height: 318px;
+//        float: left;
+//        position: relative;
+        padding: 0;
+        position: absolute;
+    }
+    
+    .home-block.teal {
+        background: transparent url(../images/hs/hs_bg_teal.jpg) center center no-repeat;
+    }
+    .home-block.darkteal {
+        background: transparent url(../images/hs/hs_bg_darkteal.jpg) center center no-repeat;
+    }
+    .home-block.purple {
+        background: transparent url(../images/hs/hs_bg_purple.jpg) center center no-repeat;
+    }
+    .home-block.darkpurple {
+        background: transparent url(../images/hs/hs_bg_darkpurple.jpg) center center no-repeat;
+    }
+    .home-block.man {
+        background: transparent url(../images/hs/hs_bg_man.jpg) center center no-repeat;
+    }
+    .home-block.woman {
+        background: transparent url(../images/hs/hs_bg_woman.jpg) center center no-repeat;
+    }
+    .home-block.extra {
+        display: block;
+        background: transparent url(../images/hs/hs_extra.jpg) center center no-repeat;
+        
+        color: white;
+        height: 318px;
+        padding: 40px 30px;
+        
+        p {
+            font-size: 13px;
+            line-height: 22px;
+            width: 100%;
+            margin: 1em 0;
+        }
+        
+        p.first-line {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 18px;
+            margin: 0;
+        }
+        p.second-line {
+            font-size: 12px;
+            line-height: 16px;
+            margin: 0 0 15px 12px;
+        }
+        
+    }
+    .home-block.glam {
+        background: transparent url(../images/hs/hs_bg_glam.jpg) center center no-repeat;
+    }
+    
+    .home-block .home-block-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .home-block.tools1 .home-block-icon {
+        background: transparent url(../images/hs/hs_icon_tools1.png) center center no-repeat;
+    }
+    .home-block.tools2 .home-block-icon {
+        background: transparent url(../images/hs/hs_icon_tools2.png) center center no-repeat;
+    }
+    .home-block.apply .home-block-icon {
+        background: transparent url(../images/hs/hs_icon_apply.png) center center no-repeat;
+    }
+    .home-block.video .home-block-icon {
+        background: transparent url(../images/hs/hs_icon_video.png) center center no-repeat;
+    }
+    .home-block.schedule .home-block-icon {
+        background: transparent url(../images/hs/hs_icon_schedule.png) center center no-repeat;
+    }
+    .home-block.calendar .home-block-icon {
+        background: transparent url(../images/hs/hs_icon_calendar.png) center center no-repeat;
+    }
+    .home-block.alert1 .home-block-icon {
+        background: transparent url(../images/hs/hs_icon_alert1.png) center center no-repeat;
+    }
+    
+    
+    .home-block .home-link a {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;        
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        text-align: center;
+//        @extend .blocklink;
+        color: white;
+        padding-top: 215px;
+        
+        background: transparent url(../images/hs/hs_sep.png) center 213px no-repeat;
+        
+    }
+    
+    .home-welcome {
+        text-align: center;
+        padding-top: 80px;
+        
+        color: #656565;
+        
+        p:first-child {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .orlo-button {
+            margin: 10px auto;
+            border-color: #bfbfbf;
+            a {
+                color: #9d9d9d;
+            }
+        }
+        
+    }
+    
+    
+    
+    .block-1 {
+        top: 0;
+        left: 0;
+    }
+    .block-2 {
+        top: 318px;
+        left: 0;
+    }
+    .block-3 {
+        top: 636px;
+        left: 0;
+    }
+    .block-4 {
+        top: 0;
+        left: 320px;
+    }
+    .block-5 {
+        top: 318px;
+        left: 320px;
+    }
+    .block-6 {
+        top: 636px;
+        left: 320px;
+    }
+    .block-7 {
+        top: 0;
+        left: 640px;
+    }
+    .block-8 {
+        top: 318px;
+        left: 640px;
+    }
+    .block-9 {
+        top: 636px;
+        left: 640px;
+    }
+}
